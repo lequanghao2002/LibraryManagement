@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{902E4515-7516-46FA-8F24-E8DF7E2DF770}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLThuVien</RootNamespace>
+    <AssemblyName>QLThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DB_QuanLyThuVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_QuanLyThuVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimKiemPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimKiemPhieuMuon.Designer.cs">
+      <DependentUpon>FormTimKiemPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CTPhieuMuon.cs" />
+    <Compile Include="Model\DocGia.cs" />
+    <Compile Include="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NXB.cs" />
+    <Compile Include="Model\PhieuMuon.cs" />
+    <Compile Include="Model\Sach.cs" />
+    <Compile Include="Model\TheLoai.cs" />
+    <Compile Include="Modify\ModifyCTPhieuMuon.cs" />
+    <Compile Include="Modify\ModifyDocGia.cs" />
+    <Compile Include="FormNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNXB.Designer.cs">
+      <DependentUpon>FormNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuMuon.Designer.cs">
+      <DependentUpon>FormPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify\ModifyNXB.cs" />
+    <Compile Include="Modify\ModifyPhieuMuon.cs" />
+    <Compile Include="Modify\ModifySach.cs" />
+    <Compile Include="Modify\ModifyTacGia.cs" />
+    <Compile Include="Modify\ModifyTheLoai.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTacGia.Designer.cs">
+      <DependentUpon>FormTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheLoai.Designer.cs">
+      <DependentUpon>FormTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocGia.Designer.cs">
+      <DependentUpon>FormDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSach.Designer.cs">
+      <DependentUpon>FormSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKeSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKeSach.Designer.cs">
+      <DependentUpon>FormThongKeSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimKiemDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimKiemDG.Designer.cs">
+      <DependentUpon>FormTimKiemDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimKiemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimKiemSach.Designer.cs">
+      <DependentUpon>FormTimKiemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrangChu.Designer.cs">
+      <DependentUpon>FormTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TacGia.cs" />
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNXB.resx">
+      <DependentUpon>FormNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuMuon.resx">
+      <DependentUpon>FormPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimKiemPhieuMuon.resx">
+      <DependentUpon>FormTimKiemPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTacGia.resx">
+      <DependentUpon>FormTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTheLoai.resx">
+      <DependentUpon>FormTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocGia.resx">
+      <DependentUpon>FormDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSach.resx">
+      <DependentUpon>FormSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKeSach.resx">
+      <DependentUpon>FormThongKeSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimKiemDG.resx">
+      <DependentUpon>FormTimKiemDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimKiemSach.resx">
+      <DependentUpon>FormTimKiemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrangChu.resx">
+      <DependentUpon>FormTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_QuanLyThuVienDataSet.xsc">
+      <DependentUpon>DB_QuanLyThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_QuanLyThuVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_QuanLyThuVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_QuanLyThuVienDataSet.xss">
+      <DependentUpon>DB_QuanLyThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-document-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bookmark-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gear-24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
