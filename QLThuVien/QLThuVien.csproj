@@ -145,6 +145,7 @@
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\TacGia.cs" />
+    <Compile Include="test.cs" />
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
